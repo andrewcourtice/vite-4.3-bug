@@ -1,21 +1,8 @@
-# Vue-Vite App Template
-[![Test and Build](https://github.com/andrewcourtice/vue-vite-starter/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/andrewcourtice/vue-vite-starter/actions/workflows/test-and-build.yml)
+# Vite 4.3 Linked Worker Bug Repo
 
- An extremely simple Vue 3 starter template written in TypeScript using Vite (compiler), Harlem (state management) and Vitest (test runner).
-
- # Getting Started
-
- 1. Clone the repo
- 2. Run `yarn install`
- 3. Run any of the following:
-    - Test - `yarn test`
-    - Run - `yarn start`
-    - Build - `yarn build`
-
- # Resources
- - [Vue documentation](https://vuejs.org)
- - [Vite documentation](https://vitejs.dev)
- - [Harlem documentation](https://harlemjs.com)
- - [Typescript documentation](https://www.typescriptlang.org)
- - [Flex Layout Attribute documentation](https://progressivered.com/fla)
- - [Vitest documentation](https://vitest.dev)
+1. Open in a GitHub codespace or clone locally
+2. Run `yarn install`
+3. Run `yarn start`
+4. Open your browser devtools and go to the network tab
+5. Notice that the linked worker file fails to load with a 404 response
+6. Follow the instructions in the sample app to further demonstrate the issue.

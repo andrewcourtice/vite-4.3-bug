@@ -27,6 +27,12 @@ export default defineConfig({
         '__VUE_OPTIONS_API__': false,
         '__VUE_PROD_DEVTOOLS__': false,
     },
+    worker: {
+        format: 'es',
+    },
+    optimizeDeps: {
+        force: true,
+    },
     plugins: [
         vuePlugin(),
     ],

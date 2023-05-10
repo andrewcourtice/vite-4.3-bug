@@ -10,9 +10,9 @@
         "lint": "yarn run eslint . --ignore-path .gitignore --ext .js,.ts,.mjs,.vue --quiet"
     },
     "dependencies": {
+        "@vue-vite-starter/worker": "1.0.0",
         "flex-layout-attribute": "^1.0.3",
-        "vue": "^3.2.47",
-        "@vue-vite-starter/worker": "1.0.0"
+        "vue": "^3.2.47"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^4.2.1",

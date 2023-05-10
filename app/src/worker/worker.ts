@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
-export default function main() {
-    console.log('Logged from worker!');
-}
+console.log('Local Worker Booted');
 
-main();
+self.addEventListener('message', event => {
+    console.log(`Local Worker: ${event.data}`);
+});
