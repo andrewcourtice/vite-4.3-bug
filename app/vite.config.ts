@@ -13,6 +13,7 @@ export default defineConfig({
     server: {
         port: 6565,
         open: true,
+        host: true,
     },
     json: {
         stringify: true,

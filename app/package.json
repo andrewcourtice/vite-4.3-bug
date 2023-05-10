@@ -1,0 +1,22 @@
+{
+    "name": "@vue-vite-starter/app",
+    "version": "1.0.0",
+    "main": "./src/index.ts",
+    "scripts": {
+        "start": "vite",
+        "build": "yarn typecheck && vite build",
+        "serve": "yarn typecheck && vite preview",
+        "typecheck": "vue-tsc --noEmit --skipLibCheck",
+        "lint": "yarn run eslint . --ignore-path .gitignore --ext .js,.ts,.mjs,.vue --quiet"
+    },
+    "dependencies": {
+        "flex-layout-attribute": "^1.0.3",
+        "vue": "^3.2.47",
+        "@vue-vite-starter/worker": "1.0.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.1",
+        "sass": "^1.62.1",
+        "vite": "^4.3.5"
+    }
+}

@@ -1,38 +1,25 @@
 {
     "name": "vue-vite-starter",
-    "version": "0.0.0",
-    "packageManager": "yarn@3.2.1",
+    "version": "1.0.0",
+    "packageManager": "yarn@3.5.1",
+    "private": true,
     "scripts": {
-        "start": "vite",
-        "test": "vitest",
-        "build": "yarn typecheck && vite build",
-        "serve": "yarn typecheck && vite preview",
-        "typecheck": "vue-tsc --noEmit --skipLibCheck",
-        "lint": "yarn run eslint . --ignore-path .gitignore --ext .js,.ts,.mjs,.vue --quiet"
+        "start": "cd app && yarn start"
     },
-    "dependencies": {
-        "@harlem/core": "^2.3.6",
-        "@harlem/extension-action": "^2.3.6",
-        "@harlem/extension-compose": "^2.3.6",
-        "@harlem/extension-reset": "^2.3.6",
-        "@harlem/plugin-devtools": "^2.3.6",
-        "flex-layout-attribute": "^1.0.3",
-        "vue": "^3.2.37",
-        "vue-router": "^4.0.16"
-    },
+    "workspaces": [
+        "app",
+        "packages/*"
+    ],
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.29.0",
-        "@typescript-eslint/parser": "^5.29.0",
-        "@vitejs/plugin-vue": "^2.3.3",
-        "c8": "^7.11.3",
-        "eslint": "^8.18.0",
-        "eslint-plugin-vue": "^9.1.1",
-        "happy-dom": "^5.3.1",
-        "sass": "^1.52.3",
-        "typescript": "^4.7.4",
-        "vite": "^2.9.12",
-        "vitest": "^0.15.2",
-        "vue-eslint-parser": "^9.0.2",
-        "vue-tsc": "^0.38.1"
+        "@typescript-eslint/eslint-plugin": "^5.59.5",
+        "@typescript-eslint/parser": "^5.59.5",
+        "c8": "^7.13.0",
+        "eslint": "^8.40.0",
+        "eslint-plugin-vue": "^9.11.1",
+        "happy-dom": "^9.10.9",
+        "typescript": "^5.0.4",
+        "vitest": "^0.31.0",
+        "vue-eslint-parser": "^9.2.1",
+        "vue-tsc": "^1.6.4"
     }
 }

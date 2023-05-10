@@ -3,7 +3,7 @@
         "strict": true,
         "target": "esnext",
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "jsx": "preserve",
         "baseUrl": ".",
         "sourceMap": true,
@@ -16,18 +16,8 @@
             "DOM.Iterable",
             "ScriptHost"
         ],
-        "types": [
-            "vite/client"
-        ],
-        "paths": {
-            "~/*": ["src/*"]
-        }
     },
     "include": [
-        "src/**/*.ts",
-        "src/**/*.d.ts",
-        "src/**/*.tsx",
-        "src/**/*.vue",
         "global.d.ts"
     ]
 }
